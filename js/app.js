@@ -2,12 +2,12 @@ $(document).ready(function() {
 	$("#js-shopping-list-form").submit(function(event) {
 		event.preventDefault();
 
-	$('shopping-list').append()
+	$('.shopping-list').append(
 		'<li>' +
 			'<span class="shopping-item">'+ $("#shopping-list-entry").val() + '</span>' +
 				'<div class=shopping-item-controls">' +
-					'<button class=shopping-item-toggle">' +
-						'span class="button-labe"check</span>' +
+					'<button class="shopping-item-toggle">' +
+						'<span class="button-label">check</span>' +
 					'</button>' +
 
 					'<button class="shopping-item-delete">' +
@@ -15,7 +15,9 @@ $(document).ready(function() {
           			'</button>' +
         		'</div>' +
       	'</li>'
-     
+     );
+
+
     $(this)[0].reset();
   });
 
